@@ -28,6 +28,7 @@ import {
     CardHeader,
     CardTitle,
   } from "./components/ui/card"
+import { Input } from './components/ui/input';
   
   
   
@@ -94,6 +95,8 @@ function Comps() {
                 <p>Card Footer</p>
             </CardFooter>
         </Card>
+
+        <Input type="text"/>
 
 
 
