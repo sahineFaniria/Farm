@@ -5,25 +5,25 @@ import { Line} from 'react-chartjs-2';
 const data = {
   labels: ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin'],
   datasets: [{
-    label: 'Ventes',
-    data: [100, 200, 300, 500, 400, 600],
+    label: 'Animaux',
+    data: [100, 200, 300, 500, 450, 400],
     fill: false,
-    backgroundColor: 'red',
-    borderColor: 'red',
+    backgroundColor: '#605DFF',
+    borderColor: '#605DFF',
   },
   {
-    label: 'Ventes',
-    data: [500, 100, 400, 200, 300, 100],
+    label: 'Ouefs',
+    data: [200, 250, 400, 200, 300, 500],
     fill: false,
-    backgroundColor: 'green',
-    borderColor: 'green',
+    backgroundColor: '#62ce6b',
+    borderColor: '#62ce6b',
   },
   {
-    label: 'Ventes',
-    data: [300, 400, 200, 100, 500, 300],
+    label: 'Lait',
+    data: [300, 150, 200, 250, 500, 600],
     fill: false,
-    backgroundColor: 'yellow',
-    borderColor: 'yellow',
+    backgroundColor: '#ffe713',
+    borderColor: '#ffe713',
   }
 
 ]
