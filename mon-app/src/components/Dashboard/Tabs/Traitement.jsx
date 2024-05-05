@@ -6,7 +6,7 @@ import dayGridPlugin from '@fullcalendar/daygrid';
 
 const events = [
   { title: 'Meeting', start: new Date() },
-  { title: 'Vaccin de canard', date: '2024-05-11' },
+  { title: 'Vente de canard', date: '2024-05-11' },
   { title: 'Vaccin de boeuf', date: '2024-05-2' },
   { title: 'Vaccin de Dindes', date: '2024-05-15' },
   { title: 'Vaccin de Mouton', date: ' 2024-05-23 11:30' },

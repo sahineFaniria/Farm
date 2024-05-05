@@ -171,6 +171,7 @@ function Comps() {
 
         <h1 className=' text-2xl font-semibold'>My components</h1>
         
+        <h2 className=' text-red-600 font-medium'>Tableau</h2>
         <Table>
             <TableCaption>A list of your recent invoices.</TableCaption>
             <TableHeader>
@@ -191,6 +192,7 @@ function Comps() {
             </TableBody>
         </Table>
 
+        <h2 className=' text-red-600 font-medium'>Alert</h2>
         <Alert>
             <AlertTitle>Heads up!</AlertTitle>
             <AlertDescription>
@@ -198,6 +200,7 @@ function Comps() {
             </AlertDescription>
         </Alert>
 
+        <h2 className=' text-red-600 font-medium'>Navigation menu</h2>
         <NavigationMenu>
             <NavigationMenuList>
                 <NavigationMenuItem>
@@ -207,39 +210,38 @@ function Comps() {
                     </NavigationMenuContent>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-          <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-              <li className="row-span-3">
-                <NavigationMenuLink asChild>
-                  <a
-                    className="flex h-full w-full select-none flex-col justify-center rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                    href="/"
-                  >
-                    <div className="mb-2 mt-4 text-lg font-medium">
-                      shadcn/ui
-                    </div>
-                    <p className="text-sm leading-tight text-muted-foreground">
-                      Beautifully designed components that you can copy and
-                      paste into your apps. Accessible. Customizable. Open
-                      Source.
-                    </p>
-                  </a>
-                </NavigationMenuLink>
-              </li>
-              <li href="/docs" title="Introduction">
-                Re-usable components built using Radix UI and Tailwind CSS.
-              </li>
-              <li href="/docs/installation" title="Installation">
-                How to install dependencies and structure your app.
-              </li>
-              <li href="/docs/primitives/typography" title="Typography">
-                Styles for headings, paragraphs, lists...etc
-              </li>
-            </ul>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
-      
+            <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
+            <NavigationMenuContent>
+                <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+                <li className="row-span-3">
+                    <NavigationMenuLink asChild>
+                    <a
+                        className="flex h-full w-full select-none flex-col justify-center rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                        href="/"
+                    >
+                        <div className="mb-2 mt-4 text-lg font-medium">
+                        shadcn/ui
+                        </div>
+                        <p className="text-sm leading-tight text-muted-foreground">
+                        Beautifully designed components that you can copy and
+                        paste into your apps. Accessible. Customizable. Open
+                        Source.
+                        </p>
+                    </a>
+                    </NavigationMenuLink>
+                </li>
+                <li href="/docs" title="Introduction">
+                    Re-usable components built using Radix UI and Tailwind CSS.
+                </li>
+                <li href="/docs/installation" title="Installation">
+                    How to install dependencies and structure your app.
+                </li>
+                <li href="/docs/primitives/typography" title="Typography">
+                    Styles for headings, paragraphs, lists...etc
+                </li>
+                </ul>
+                </NavigationMenuContent>
+            </NavigationMenuItem>
                 
                 <NavigationMenuItem>
                     <Link href="/docs" legacyBehavior passHref>
@@ -252,6 +254,7 @@ function Comps() {
             </NavigationMenuList>
         </NavigationMenu>
 
+        <h2 className=' text-red-600 font-medium'>Alert dialog</h2>
         <AlertDialog>
             <AlertDialogTrigger>Open</AlertDialogTrigger>
             <AlertDialogContent>
@@ -269,6 +272,7 @@ function Comps() {
             </AlertDialogContent>
         </AlertDialog>
 
+        <h2 className=' text-red-600 font-medium'>Card</h2>
         <Card>
             <CardHeader>
                 <CardTitle>Card Title</CardTitle>
@@ -282,9 +286,10 @@ function Comps() {
             </CardFooter>
         </Card>
 
-        <Input type="text"/>
+        <h2 className=' text-red-600 font-medium'>Input</h2>
+        <Input className='border-blue-500' type="text" placeholder='Rakoto' />
 
-
+        <h2 className=' text-red-600 font-medium'>Dialog</h2>
         <Dialog>
             <DialogTrigger>Open</DialogTrigger>
             <DialogContent>
@@ -299,51 +304,51 @@ function Comps() {
         </Dialog>
 
         <Dialog>
-        <DialogTrigger asChild>
-            <Button variant="outline">Edit Profile</Button>
-        </DialogTrigger>
-        <DialogContent className="sm:max-w-[425px]">
-            <DialogHeader>
-            <DialogTitle>Edit profile</DialogTitle>
-            <DialogDescription>
-                Make changes to your profile here. Click save when you're done.
-            </DialogDescription>
-            </DialogHeader>
-            <div className="grid gap-4 py-4">
-            <div className="grid grid-cols-4 items-center gap-4">
-                <Label htmlFor="name" className="text-right">
-                Name
-                </Label>
-                <Input
-                id="name"
-                defaultValue="Pedro Duarte"
-                className="col-span-3"
-                />
-            </div>
-            <div className="grid grid-cols-4 items-center gap-4">
-                <Label htmlFor="username" className="text-right">
-                Username
-                </Label>
-                <Input
-                id="username"
-                defaultValue="@peduarte"
-                className="col-span-3"
-                />
-            </div>
-            <div className="grid w-full max-w-sm items-center gap-1.5">
-                <Label htmlFor="email">Email</Label>
-                <Input type="email" id="email" placeholder="Email" />
-            </div>
-            </div>
-            <DialogFooter>
-            <Button variant='rafane' type="submit">Submit</Button>
-            <Button type="submit">Save changes</Button>
-            </DialogFooter>
-        </DialogContent>
-    </Dialog>
+            <DialogTrigger asChild>
+                <Button variant="outline">Edit Profile</Button>
+            </DialogTrigger>
+            <DialogContent className="sm:max-w-[425px]">
+                <DialogHeader>
+                    <DialogTitle>Edit profile</DialogTitle>
+                    <DialogDescription>
+                        Make changes to your profile here. Click save when you're done.
+                    </DialogDescription>
+                </DialogHeader>
+                <div className="grid gap-4 py-4">
+                <div className="grid grid-cols-4 items-center gap-4">
+                    <Label htmlFor="name" className="text-right">
+                    Name
+                    </Label>
+                    <Input
+                    id="name"
+                    defaultValue="Pedro Duarte"
+                    className="col-span-3"
+                    />
+                </div>
+                <div className="grid grid-cols-4 items-center gap-4">
+                    <Label htmlFor="username" className="text-right">
+                    Username
+                    </Label>
+                    <Input
+                    id="username"
+                    defaultValue="@peduarte"
+                    className="col-span-3"
+                    />
+                </div>
+                <div className="grid w-full max-w-sm items-center gap-1.5">
+                    <Label htmlFor="email">Email</Label>
+                    <Input type="email" id="email" placeholder="Email" />
+                </div>
+                </div>
+                <DialogFooter>
+                <Button variant='rafane' type="submit">Submit</Button>
+                <Button type="submit">Save changes</Button>
+                </DialogFooter>
+            </DialogContent>
+        </Dialog>
 
         
-        
+        <h2 className=' text-red-600 font-medium'>Pagination</h2>
         <Pagination>
             <PaginationContent>
                 <PaginationItem>
@@ -369,8 +374,9 @@ function Comps() {
             </PaginationContent>
         </Pagination>
 
-        <Select>
-            <SelectTrigger className="w-[180px]">
+        <h2 className=' text-red-600 font-medium'>Select</h2>
+        <Select  >
+            <SelectTrigger className="w-[180px] b">
                 <SelectValue placeholder="Select a fruit" />
             </SelectTrigger>
             <SelectContent>
@@ -385,6 +391,7 @@ function Comps() {
             </SelectContent>
         </Select>
 
+        <h2 className=' text-red-600 font-medium'>Sheet</h2>
         <Sheet>
             <SheetTrigger asChild>
                 <Button variant="outline">Open</Button>
@@ -425,6 +432,8 @@ function Comps() {
             className="rounded-md border shadow"
         /> */}
 
+
+        <h2 className=' text-red-600 font-medium'>Popover</h2>
         <Popover>
             <PopoverTrigger asChild>
                 <Button variant="outline">Open popover</Button>
@@ -475,32 +484,34 @@ function Comps() {
             </PopoverContent>
         </Popover>
 
+        <h2 className=' text-red-600 font-medium'>Hover card</h2>
         <HoverCard>
-      <HoverCardTrigger asChild>
-        <Button variant="link">@nextjs</Button>
-      </HoverCardTrigger>
-      <HoverCardContent className="w-80">
-        <div className="flex justify-between space-x-4">
-          <Avatar>
-            <AvatarImage src="https://github.com/vercel.png" />
-            <AvatarFallback>VC</AvatarFallback>
-          </Avatar>
-          <div className="space-y-1">
-            <h4 className="text-sm font-semibold">@nextjs</h4>
-            <p className="text-sm">
-              The React Framework – created and maintained by @vercel.
-            </p>
-            <div className="flex items-center pt-2">
-              <CalendarIcon className="mr-2 h-4 w-4 opacity-70" />{" "}
-              <span className="text-xs text-muted-foreground">
-                Joined December 2021
-              </span>
-            </div>
-          </div>
-        </div>
-      </HoverCardContent>
-    </HoverCard>
+            <HoverCardTrigger asChild>
+                <Button variant="link">@nextjs</Button>
+            </HoverCardTrigger>
+            <HoverCardContent className="w-80">
+                <div className="flex justify-between space-x-4">
+                <Avatar>
+                    <AvatarImage src="https://github.com/vercel.png" />
+                    <AvatarFallback>VC</AvatarFallback>
+                </Avatar>
+                <div className="space-y-1">
+                    <h4 className="text-sm font-semibold">@nextjs</h4>
+                    <p className="text-sm">
+                    The React Framework – created and maintained by @vercel.
+                    </p>
+                    <div className="flex items-center pt-2">
+                    <CalendarIcon className="mr-2 h-4 w-4 opacity-70" />{" "}
+                    <span className="text-xs text-muted-foreground">
+                        Joined December 2021
+                    </span>
+                    </div>
+                </div>
+                </div>
+            </HoverCardContent>
+        </HoverCard>
 
+        <h2 className=' text-red-600 font-medium'>Skeleton</h2>
         <div className="flex items-center space-x-4">
             <Skeleton className="h-12 w-12 rounded-full bg-blue-400" />
             <div className="space-y-2">
@@ -509,6 +520,7 @@ function Comps() {
             </div>
         </div>
 
+        <h2 className=' text-red-600 font-medium'>Progress bar</h2>
         <Progress value={progress} className="w-[30%] bg-blue-400" />
         
 

@@ -6,7 +6,7 @@ import Mort from '../Table/Mort';
 
 const Animaux = () => {
   return (
-    <div className='test overflow-x-hidden px-5 py-2'>
+    <div className='test h-full overflow-x-hidden px-5 py-2'>
         <aside className="sidebar">
             <div className="tabs ">
                 <input id="tab-1" type="radio" name="group" />
@@ -16,8 +16,8 @@ const Animaux = () => {
 
                 <div className="buttons flex gap-8  mx-5">
                     <label className=" text-neutral-900 text-lg " for="tab-1">En bonne santé</label>
-                    <label className=" text-neutral-800 text-lg" for="tab-2">En traitement</label>
-                    <label className=" text-neutral-800 text-lg" for="tab-3">Vendu</label>
+                    <label className=" text-neutral-900 text-lg" for="tab-2">En traitement</label>
+                    <label className=" text-neutral-900 text-lg" for="tab-3">Vendu</label>
                     <label className=" text-neutral-900 text-lg" for="tab-4">Mort</label>
 
                     <div className="underline"></div>

@@ -18,7 +18,7 @@ import {
 const Stock = () => {
   return (
     <div className='px-5 py-3'>
-        <p className='text-lg text-neutral-700'>Traitement pour chaque catégorie</p>
+        <p className='text-xl text-neutral-700'>Stock de toutes les catégories</p>
         <img className=' rounded-md' src={biby} alt="elevage image" />
         <Button className=" text-white -mt-3 mb-3" variant="rafane" size="sm" >Ajouter+</Button>
         <Button className=" bg-white  ml-3 mr-3" variant="ghost" size="sm" >~~Filtrer</Button>
