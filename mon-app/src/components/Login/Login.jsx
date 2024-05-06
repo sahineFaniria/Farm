@@ -15,7 +15,7 @@ const Login = () => {
             <div>
                 <p>FarmFlow</p>
             </div>
-            1\
+           
         </div>
         <div>
             <p className=' text-neutral-600 text-xl font-semibold'>S'identifier</p>

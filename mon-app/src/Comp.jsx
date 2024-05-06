@@ -1,5 +1,6 @@
 "use client"
 import React from 'react';
+import logo from "./images/logo.png";
 import { Button } from './components/ui/button';
 import { Alert, AlertDescription, AlertTitle } from "./components/ui/alert";
 import {
@@ -204,51 +205,82 @@ function Comps() {
         <NavigationMenu>
             <NavigationMenuList>
                 <NavigationMenuItem>
-                    <NavigationMenuTrigger>Item One</NavigationMenuTrigger>
-                    <NavigationMenuContent>
-                        <NavigationMenuLink>Link</NavigationMenuLink>
-                    </NavigationMenuContent>
-                </NavigationMenuItem>
-                <NavigationMenuItem>
-            <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
-            <NavigationMenuContent>
-                <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-                <li className="row-span-3">
-                    <NavigationMenuLink asChild>
-                    <a
-                        className="flex h-full w-full select-none flex-col justify-center rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                        href="/"
-                    >
-                        <div className="mb-2 mt-4 text-lg font-medium">
-                        shadcn/ui
-                        </div>
-                        <p className="text-sm leading-tight text-muted-foreground">
-                        Beautifully designed components that you can copy and
-                        paste into your apps. Accessible. Customizable. Open
-                        Source.
-                        </p>
-                    </a>
-                    </NavigationMenuLink>
-                </li>
-                <li href="/docs" title="Introduction">
-                    Re-usable components built using Radix UI and Tailwind CSS.
-                </li>
-                <li href="/docs/installation" title="Installation">
-                    How to install dependencies and structure your app.
-                </li>
-                <li href="/docs/primitives/typography" title="Typography">
-                    Styles for headings, paragraphs, lists...etc
-                </li>
-                </ul>
-                </NavigationMenuContent>
-            </NavigationMenuItem>
-                
-                <NavigationMenuItem>
                     <Link href="/docs" legacyBehavior passHref>
                         <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                        Documentation
+                        Accueil
                         </NavigationMenuLink>
                     </Link>
+                </NavigationMenuItem>
+                <NavigationMenuItem>
+                    <NavigationMenuTrigger>A propos</NavigationMenuTrigger>
+                    <NavigationMenuContent>
+                        <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+                        <li className="row-span-3">
+                            <NavigationMenuLink asChild>
+                            <a
+                                className="flex h-full w-full select-none flex-col justify-center rounded-md bg-gradient-to-b from-muted/50 to-muted  no-underline outline-none focus:shadow-md"
+                                href="/"
+                            >
+                                <div className=" text-lg font-medium">
+                                Farm
+                                </div>
+                                <p className="text-sm leading-tight text-muted-foreground">
+                                    C'est pour : <br />
+                                    . gérer votre ferme.<br />
+                                    . sécuriser votre données.<br />
+                                    . voir votre historique.
+                                    
+                                </p>
+                            </a>
+                            </NavigationMenuLink>
+                        </li>
+                        <li href="/docs" title="Introduction">
+                            Gestion de votre ferme pour répondre votre besoins.
+                        </li>
+                        <li href="/docs/installation" title="Installation">
+                            Gestion de votre caisse pour chaque le mouvement.
+                        </li>
+                        <li href="/docs/primitives/typography" title="Typography">
+                            Sécurisation de votre données et les histogrammes des votre ferme.
+                        </li>
+                        </ul>
+                    </NavigationMenuContent>
+                </NavigationMenuItem>
+
+                <NavigationMenuItem>
+                    <NavigationMenuTrigger>Contact</NavigationMenuTrigger>
+                    <NavigationMenuContent>
+                        <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+                        <li className="row-span-3">
+                            <NavigationMenuLink asChild>
+                            <a
+                                className="flex h-full w-full select-none flex-col justify-center rounded-md bg-gradient-to-b from-muted/50 to-muted  no-underline outline-none focus:shadow-md"
+                                href="/"
+                            >   
+                                <img src={logo} alt="logo" className=" w-12" />
+                                <div className=" text-lg font-medium">
+                                Notre contact:
+                                </div>
+                                <p className="text-sm leading-tight text-muted-foreground">
+                                    www.facebook.com<br />
+                                    www.instagram.com<br />
+                                    www.telegram.com
+                                    
+                                </p>
+                            </a>
+                            </NavigationMenuLink>
+                        </li>
+                        <li href="/docs" title="Introduction">
+                            +261 34 56 200 00
+                        </li>
+                        <li href="/docs/installation" title="Installation">
+                            +261 32 56 200 00
+                        </li>
+                        <li href="/docs/primitives/typography" title="Typography">
+                            +261 33 56 200 00
+                        </li>
+                        </ul>
+                    </NavigationMenuContent>
                 </NavigationMenuItem>
 
             </NavigationMenuList>

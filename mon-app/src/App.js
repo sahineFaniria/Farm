@@ -18,9 +18,10 @@ import Test from './components/Dashboard/Tabs/Test';
 
 function App() {
   return (
-    <div className="App">
+    <div className="">
             <Routes>
                 <Route path='' element={<Home/>} />
+                <Route path='home' element={<Home/>} />
                 <Route path='login' element={<Login/>} />
                 <Route path='signup' element={<Signup/>} />
                 <Route path='connect' element={<Connect/>} />
