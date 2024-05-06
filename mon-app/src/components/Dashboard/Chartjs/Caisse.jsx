@@ -58,9 +58,9 @@ const data = {
 
 const Caisse = () => {
   return (
-    <div>
+    
         <Line data={data} options={options} />
-    </div>
+   
   )
 }
 

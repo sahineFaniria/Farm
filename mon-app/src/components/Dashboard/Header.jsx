@@ -19,7 +19,7 @@ const Header = () => {
   return (
     <div >
         <div className='head px-10 '>
-            <h2 className='farm-name '>My Farm Name</h2>
+            <h2 className='farm-name text-[12px] md:text-[20px] '>My Farm Name</h2>
             <div className=' flex gap-1'>
                 <h2 className='flex items-center' >Username</h2>
                 <div className='flex items-center'>

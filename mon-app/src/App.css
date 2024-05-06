@@ -321,9 +321,6 @@ a {
   transition: width 500ms ease;
   z-index: 50;
 }
-/* .dash.active .nav {
-  width: 15rem;
-} */
 
 .logo{
   font-size: 22px;
@@ -365,12 +362,6 @@ a {
   border-top: 1px solid rgb(211, 211, 211);
 }
 
-/* .dash.active .sidebar-links,
-.dash.active .sidebar-header,
-.dash.active .user-profile {
-  justify-content: start;
-  align-items: stretch;
-} */
 
 .dash .sidebar-links,
 .dash .sidebar-header,
@@ -387,13 +378,9 @@ a {
 }
 .hidd {
   display: inline;
-  /* display: none; */
 
 }
 
-/* .dash.active .hidd {
-  display: inline;
-} */
 
 .link:hover,
 .link.active:hover {
@@ -485,7 +472,6 @@ a {
 
 .farm-name{
   color: var(--text);
-  font-size: 20px;
   font-weight: 600;
 }
 
@@ -498,7 +484,6 @@ a {
 .test {
   width: 100%;
   display: grid;
-  /* flex-wrap: wrap; */
   place-items: center;
   margin: 0;
   line-height: 1.5;
@@ -559,7 +544,6 @@ a {
   position: relative;
   display: flex;
  
-  /* border-bottom: 1px solid #575757; */
 }
 
 .test .underline {
@@ -567,7 +551,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* left: 0; */
   bottom: 0;
   width: var(--button-width);
   height: 3px;
@@ -689,7 +672,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* left: 0; */
   bottom: 0;
   width: var(--pro-width);
   height: 3px;

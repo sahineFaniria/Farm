@@ -1,61 +1,9 @@
-import { type } from '@testing-library/user-event/dist/type';
 import React from 'react';
-import { Doughnut, Line, Pie } from 'react-chartjs-2';
+import Mamifere from '../Chartjs/Mamifere';
+import Volaille from '../Chartjs/Volaille';
+import Caisse from '../Chartjs/Caisse';
 
 
-const data = {
-    labels: ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin'],
-    datasets: [{
-      label: 'Entrant',
-      data: [100, 200, 300, 450, 400, 600],
-      fill: true, // Enable area fill for rounded curves
-      backgroundColor: 'transparent', // Semi-transparent red
-      borderColor: '#3b9633',
-      tension: 0.4, // Adjust tension for curve smoothness (0-1)
-    },
-    {
-        label: 'Sortant',
-        data: [50, 150, 100, 500, 200, 550],
-        fill: true, // Enable area fill for rounded curves
-        backgroundColor: 'transparent', // Semi-transparent red
-        borderColor: '#e63f3f',
-        tension: 0.4, // Adjust tension for curve smoothness (0-1)
-    },
-    {
-        label: 'Restart',
-        data: [600, 200, 400, 100, 400, 100],
-        fill: true, // Enable area fill for rounded curves
-        backgroundColor: 'transparent', // Semi-transparent red
-        borderColor: '#605DFF',
-        tension: 0.4, // Adjust tension for curve smoothness (0-1)
-    }
-    ],
-  };
-  
-  const options = {
-    scales: {
-      x: {
-        ticks: {
-          beginAtZero: true,
-        },
-      },
-      y: {
-        ticks: {
-          beginAtZero: true,
-        },
-      },
-    },
-    title: {
-      display: true,
-      text: 'Exemple de Line Chart (Courbe)',
-    },
-    elements: {
-      line: {
-        // Customize line styling
-        borderWidth: 2,
-      },
-    },
-  };
 
 
 const Accueil = () => {
@@ -94,7 +42,7 @@ const Accueil = () => {
                 </div>
                 <div className=' pr-10'>
                     <div className=' w-40'>
-                        <Doughnut data={data3} options={options3} className='' />
+                        <Mamifere/>
                     </div>
                 </div>
             </div>
@@ -128,7 +76,7 @@ const Accueil = () => {
                 </div>
                 <div className=' pr-10'>
                     <div className=' w-40'>
-                        <Doughnut data={data2} options={options2} className='' />
+                        <Volaille/>
                     </div>
                 </div>
             </div>
@@ -161,7 +109,7 @@ const Accueil = () => {
                     </div>
                 </div>
                 <div className="h-[20rem]">
-                    <Line data={data} options={options} />
+                    <Caisse/>
                 </div>
                 
             </div>
@@ -205,56 +153,6 @@ const Accueil = () => {
 export default Accueil
 
 
-
-const data2 = {
-    labels: false,
-    datasets: [{
-      label: 'Ventes annuelles',
-      data: [300, 400, 200],
-      backgroundColor: ['#62ce6b', '#1d2041', '#5f6697'],
-      hoverBackgroundColor: ['#62ce6b', '#1d2041', '#5f6697'],
-    }],
-    
-  };
-  
-  const options2 = {
-    title: {
-      display: true,
-      text: 'Répartition des ventes annuelles',
-    },
-    legend: {
-      display: true,
-      position: 'right',
-      labels: {
-        fontColor: 'black',
-      },
-    },
-  };
-
-  const data3 = {
-    labels: false,
-    datasets: [{
-      label: 'Ventes annuelles',
-      data: [300, 700, 200],
-      backgroundColor: ['#605DFF', '#e63f3f', '#ffe713'],
-      hoverBackgroundColor: ['#605DFF', '#e63f3f', '#ffe713'],
-    }],
-    
-  };
-  
-  const options3 = {
-    title: {
-      display: true,
-      text: 'Répartition des ventes annuelles',
-    },
-    legend: {
-      display: true,
-      position: 'right',
-      labels: {
-        fontColor: 'black',
-      },
-    },
-  };
 
 
 

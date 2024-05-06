@@ -7,8 +7,9 @@ const data = {
     datasets: [{
       label: 'Ventes annuelles',
       data: [300, 400, 200],
-      backgroundColor: ['#62ce6b', '#1d2041', '#5f6697'],
-      hoverBackgroundColor: ['#62ce6b', '#1d2041', '#5f6697'],
+      backgroundColor: ['#605DFF', '#e63f3f', '#ffe713'],
+      hoverBackgroundColor: ['#605DFF', '#e63f3f', '#ffe713'],
+      
     }],
     
   };
