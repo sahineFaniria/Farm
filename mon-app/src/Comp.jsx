@@ -123,6 +123,7 @@ import {
   AvatarFallback,
   AvatarImage,
 } from "./components/ui/avatar";
+
 import {
   HoverCard,
   HoverCardContent,
@@ -337,7 +338,7 @@ function Comps() {
 
         <Dialog>
             <DialogTrigger asChild>
-                <Button variant="outline">Edit Profile</Button>
+                <Button variant="link">Edit Profile</Button>
             </DialogTrigger>
             <DialogContent className="sm:max-w-[425px]">
                 <DialogHeader>
@@ -347,34 +348,34 @@ function Comps() {
                     </DialogDescription>
                 </DialogHeader>
                 <div className="grid gap-4 py-4">
-                <div className="grid grid-cols-4 items-center gap-4">
-                    <Label htmlFor="name" className="text-right">
-                    Name
-                    </Label>
-                    <Input
-                    id="name"
-                    defaultValue="Pedro Duarte"
-                    className="col-span-3"
-                    />
-                </div>
-                <div className="grid grid-cols-4 items-center gap-4">
-                    <Label htmlFor="username" className="text-right">
-                    Username
-                    </Label>
-                    <Input
-                    id="username"
-                    defaultValue="@peduarte"
-                    className="col-span-3"
-                    />
-                </div>
-                <div className="grid w-full max-w-sm items-center gap-1.5">
-                    <Label htmlFor="email">Email</Label>
-                    <Input type="email" id="email" placeholder="Email" />
-                </div>
+                    <div className="grid w-full max-w-sm items-center gap-1.5">
+                        <Label htmlFor="name" >
+                        Name
+                        </Label>
+                        <Input
+                        id="name"
+                        defaultValue="Pedro Duarte"
+                        className="col-span-3"
+                        />
+                    </div>
+                    <div className="grid w-full max-w-sm items-center gap-1.5">
+                        <Label htmlFor="username" >
+                        Username
+                        </Label>
+                        <Input
+                        id="username"
+                        defaultValue="@peduarte"
+                        className="col-span-3"
+                        />
+                    </div>
+                    <div className="grid w-full max-w-sm items-center gap-1.5">
+                        <Label htmlFor="email">Email</Label>
+                        <Input type="email" id="email" placeholder="Email" />
+                    </div>
                 </div>
                 <DialogFooter>
-                <Button variant='rafane' type="submit">Submit</Button>
-                <Button type="submit">Save changes</Button>
+                <Button className=' text-white ' size='sm' variant='rafane' type="submit">Submit</Button>
+                <Button   size='sm' variant='destructive' type="submit">Annuler</Button>
                 </DialogFooter>
             </DialogContent>
         </Dialog>

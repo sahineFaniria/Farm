@@ -3,6 +3,7 @@ import { Button } from '../../ui/button';
 import 'chart.js/auto'; // Optional: Register all default Chart.js scales
 import FullCalendar from '@fullcalendar/react';
 import dayGridPlugin from '@fullcalendar/daygrid';
+import AjoutTrai from '../Modal/AjoutTrai';
 
 const events = [
   { title: 'Meeting', start: new Date() },
@@ -26,7 +27,10 @@ const renderEventContent = (eventInfo) => {
 const Traitement = () => {
   return (
     <div className="px-5 py-2">
-      <Button className=" text-white mt-5 mb-5" variant="rafane" size="sm" >Ajouter+</Button>
+      <div className=" mt-5 mb-5">
+        <AjoutTrai  />
+      </div>
+      
       <FullCalendar
         plugins={[dayGridPlugin]}
         initialView="dayGridMonth"
