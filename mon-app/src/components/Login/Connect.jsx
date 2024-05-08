@@ -2,6 +2,8 @@ import React from 'react';
 import logo from "../../images/logo.png";
 import creer from "../../images/connect.png";
 import { Link } from 'react-router-dom';
+import { Label } from "../ui/label";
+import { Input } from '../ui/input';
 
 
 const Connect = () => {
@@ -23,14 +25,10 @@ const Connect = () => {
             <p className=' text-neutral-600 text-md font-semibold'>A propos de votre ferme</p>
         </div>
         <div class="input__wrapper">
-            <input type="email" id="email" name="email" class="input__field" placeholder="Your Email" required autoComplete='none'/>
-            <label for="email" class="input__label">Nom du ferme</label>
-            <svg class="input__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                <path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"></path>
-                <path d="M16 12v1.5a2.5 2.5 0 0 0 5 0v-1.5a9 9 0 1 0 -5.5 8.28"></path>
-            </svg>
+            <div className="grid w-full max-w-sm items-center gap-1.5">
+                <Label htmlFor="email">Nom du ferme</Label> 
+                <Input type="email" id="email" placeholder="FarmFlow" />
+            </div>
         </div>
        
         <button type="submit" class="my-form__button">
